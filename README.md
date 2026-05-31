@@ -42,10 +42,5 @@ Create a Google Sheet with the following layout structure in row `1`:
 4. Set *Execute as* to **Me** and *Who has access* to **Anyone**.
 5. Copy the generated Web App macro URL.
 
-### 3. Frontend Configurations
-Open `script.js` and inject your unique macro link directly into the structural configuration variable:
-```javascript
-const GOOGLE_SCRIPT_URL = "[https://script.google.com/macros/s/...YOUR_ID.../exec](https://script.google.com/macros/s/...YOUR_ID.../exec)";
-
-⚖️ License & Attribution
+### 3. ⚖️ License & Attribution
 Designed and engineered for Metro Heights Real Estate Project — An ADN Initiative. All rights reserved.
