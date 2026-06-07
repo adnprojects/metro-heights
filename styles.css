@@ -144,8 +144,8 @@ a {
 
 .hero-media {
   background:
-    linear-gradient(120deg, rgba(8, 77, 76, 0.1), rgba(182, 106, 60, 0.12)),
-    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85") center/cover;
+    linear-gradient(120deg, rgba(8, 77, 76, 0.08), rgba(182, 106, 60, 0.08)),
+    url("assets/hero-tower-enhanced.png") 62% center/cover;
   transform: scale(1.04);
   animation: heroDrift 16s ease-in-out infinite alternate;
 }
@@ -271,7 +271,8 @@ h3 {
 }
 
 .feature-grid,
-.amenity-grid {
+.amenity-grid,
+.price-grid {
   display: grid;
   gap: 18px;
 }
@@ -282,6 +283,7 @@ h3 {
 
 .feature-card,
 .amenity,
+.price-card,
 .contact-form,
 .location-list {
   background: var(--white);
@@ -311,9 +313,51 @@ h3 {
 }
 
 .feature-card p,
-.amenity p {
+.amenity p,
+.price-card p {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.price-section {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) 1.1fr;
+  gap: clamp(32px, 5vw, 70px);
+  align-items: center;
+  background: #fff7ee;
+}
+
+.price-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.price-card {
+  min-height: 250px;
+  padding: clamp(26px, 4vw, 42px);
+  border: 1px solid rgba(182, 106, 60, 0.28);
+  border-radius: 8px;
+}
+
+.price-card span,
+.price-card strong {
+  display: block;
+}
+
+.price-card span {
+  margin-bottom: 22px;
+  color: var(--copper);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.price-card strong {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--teal-dark);
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  line-height: 1.1;
+  overflow-wrap: break-word;
 }
 
 .residences {
@@ -329,7 +373,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(rgba(12, 34, 38, 0.08), rgba(12, 34, 38, 0.08)),
-    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85") center/cover;
+    url("assets/residences-amenities-enhanced.png") center/cover;
   box-shadow: var(--shadow);
 }
 
@@ -360,8 +404,15 @@ h3 {
 }
 
 .section-heading {
-  max-width: 720px;
-  margin-bottom: 34px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.amenities .section-heading h2 {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.05;
 }
 
 .amenity-grid {
@@ -641,6 +692,7 @@ textarea {
   .hero-stats,
   .intro,
   .residences,
+  .price-section,
   .location,
   .contact-section,
   .footer-main {
@@ -648,7 +700,8 @@ textarea {
   }
 
   .feature-grid,
-  .amenity-grid {
+  .amenity-grid,
+  .price-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -694,6 +747,7 @@ textarea {
   .hero-stats,
   .feature-grid,
   .amenity-grid,
+  .price-grid,
   .location-list,
   .contact-form {
     grid-template-columns: 1fr;
