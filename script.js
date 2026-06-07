@@ -43,6 +43,11 @@ leadForm.addEventListener("submit", async (event) => {
   searchParams.append("interestedIn", formData.get("interestedIn") || "");
   searchParams.append("message", formData.get("message") || "");
   searchParams.append("source", "Website");
+  searchParams.append("project", "Metro Heights");
+  searchParams.append("propertyType", "Premium 3 & 4 BHK High Rise Residences");
+  searchParams.append("location", "Puppala Guda, Hyderabad");
+  searchParams.append("eoiPrice", "8499 per sft + additional charges");
+  searchParams.append("submittedAt", new Date().toISOString());
 
   formStatus.className = "form-status";
 
