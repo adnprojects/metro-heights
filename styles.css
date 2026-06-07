@@ -145,7 +145,7 @@ a {
 .hero-media {
   background:
     linear-gradient(120deg, rgba(8, 77, 76, 0.08), rgba(182, 106, 60, 0.08)),
-    url("assets/hero-tower-enhanced.png") 62% center/cover;
+    url("workflows/hero-tower-enhanced.png") 62% center/cover;
   transform: scale(1.04);
   animation: heroDrift 16s ease-in-out infinite alternate;
 }
@@ -373,7 +373,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(rgba(12, 34, 38, 0.08), rgba(12, 34, 38, 0.08)),
-    url("assets/residences-amenities-enhanced.png") center/cover;
+    url("workflows/residences-amenities-enhanced.png") center/cover;
   box-shadow: var(--shadow);
 }
 
